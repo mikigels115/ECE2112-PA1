@@ -9,10 +9,10 @@ Create a function named rotate word() that accepts a non-empty string. Move the 
 capitalization of every character.
 
 **Functions and methods that were used here:**
-* **Function Definition (`def` / `return`):** Defines the modular function `rotate_word(text)` that accepts a string and returns the rotated result.
-* **String Indexing (`text[0]`):** Isolates the first character of the string at index 0.
-* **String Slicing (`text[1:]`):** Extracts all characters starting from index 1 through the end of the string.
-* **String Concatenation (`+`):** Glues the sliced substring (`text[1:]`) and the first character (`text[0]`) back together in reverse order.
+* **(`def` / `return`):** It defines the function rotate_word(text) to input a string variable inside the function and return the rotated word string to the output.
+* **(`text[0]`):** It gets the very first character of the string at index 0.
+* **(`text[1:]`):** It slices all the remaining characters starting from index 1 up until the end of the string.
+* **String Concatenation (`+`):** It combines the sliced characters and the first character together to move the first letter to the end.
 
 ```python
 def rotate_word(text):    
@@ -34,10 +34,10 @@ function must:
 4. join the processed first and last names using one period (.).
 
 **Functions and methods that were used here:**
-* **Function Definition (`def` / `return`):** Defines `make_username(first_name, last_name)` to accept two separate name inputs and return a formatted username string.
-* **Case Conversion (`.lower()`):** Converts all uppercase characters in both `first_name` and `last_name` to lowercase.
-* **Character Replacement (`.replace(" ", "")`):** Identifies and strips all space characters from multi-word names (such as "Ana Maria" or "De Leon").
-* **String Concatenation (`+`):** Combines the cleaned first name, a literal period (`"."`), and the cleaned last name into a unified username string.
+* **(`def` / `return`):** It defines the function `make_username(first_name, last_name)` to input two separate name variables inside the function and return a username string to the output.
+* **(`.lower()`):** It converts from all uppercase to lowercase letters in both the `first_name` and `last_name`.
+* **(`.replace(" ", "")`):** It removes all space characters in the output (ex. "Ana Maria" or "De Leon").
+* **(`+`):** It combines the cleaned first name, a literal period (`"."`), and the cleaned last name into a unified username string.
 
 ```python
 def make_username(first_name, last_name):
@@ -62,12 +62,9 @@ Using these variables, return a new list in which the first and last elements ha
 The elements in middle must remain in their original order. Do not modify the input list.
 
 **Functions and methods that were used here:**
-* **Function Definition (`def` / `return`):** Defines `swap_bookends(items)` to accept a list of elements and return a newly constructed list.
-* **Extended Sequence Unpacking (`first, *middle, last = items`):** 
-  * Captures the very first list element into `first`.
-  * Gathers all center elements into a sub-list named `middle` using the asterisk (`*`) iterable unpacking operator.
-  * Captures the final list element into `last`.
-* **List Construction & Unpacking (`[last, *middle, first]`):** Builds a brand new list placing `last` at index 0, expanding the `middle` elements in place, and appending `first` at the end without mutating the original list.
+* **(`def` / `return`):** It defines the function swap_bookends(items) to input a list inside the function and return a new swapped list to the output.
+* **(`first, *middle, last = items`):** It unpacks the list so the first element goes to first, the last element goes to last, and all the middle elements go into middle using the asterisk (*).
+* **(`[last, *middle, first]`):** It combines and creates the new list with last in front, the middle elements in the center, and first at the very end.
 
 ```python
 def swap_bookends(items):
@@ -79,4 +76,9 @@ def swap_bookends(items):
     print(swap_bookends(["red", "green", "blue"]))
     print(swap_bookends([8, 3])) 
     print(swap_bookends(["mlbb", "cod", "pubg"]))
+
+
+# README File Version History
+
+August 26, 2026: Initial README file output uploaded.
     
