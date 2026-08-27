@@ -2,7 +2,7 @@
 
 **Made by: Mike Angelo P. Atienza | Section: 2ECE-B**
 
-The content of this repository contains the Programming Assignment 1 for our course "Advanced Computer Programming and Algorithms" this S.Y. 2026-2027. This project contains three python programming problems 
+This repository contains the Programming Assignment 1 for our course "Advanced Computer Programming and Algorithms" this S.Y. 2026-2027. This project contains three python programming problems focusing on basic string manipulation, built-in string methods, and sequence unpacking without the use of external libraries or loops.
 
 # 1. Word Rotation Problem
 Create a function named rotate word() that accepts a non-empty string. Move the first character of the string to the end while keeping all remaining characters in their original order. Preserve the
