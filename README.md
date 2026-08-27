@@ -16,7 +16,6 @@ capitalization of every character.
 
 def rotate_word(text):    
     return text[1:] + text[0]
-
     print(rotate_word("python"))
     print(rotate_word("logic"))
     print(rotate_word("Code"))
@@ -42,7 +41,6 @@ def make_username(first_name, last_name):
     comprs_last = last_name.lower().replace(" ","")
     user_builder = comprs_first + "." + comprs_last
     return user_builder 
-
     print(make_username("Ada", "Lovelace"))
     print(make_username("Alan", "Turing"))
     print(make_username("Ana Maria", "De Leon"))
@@ -68,7 +66,6 @@ The elements in middle must remain in their original order. Do not modify the in
 def swap_bookends(items):
     first, *middle, last = items
     return [last, *middle, first]
-
     print(swap_bookends([1, 2, 3, 4, 5, 6]))
     print(swap_bookends(["red", "green", "blue"]))
     print(swap_bookends([8, 3])) 
