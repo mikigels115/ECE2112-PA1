@@ -14,6 +14,14 @@ capitalization of every character.
 * **String Slicing (`text[1:]`):** Extracts all characters starting from index 1 through the end of the string.
 * **String Concatenation (`+`):** Glues the sliced substring (`text[1:]`) and the first character (`text[0]`) back together in reverse order.
 
+def rotate_word(text):    
+    return text[1:] + text[0]
+
+    print(rotate_word("python"))
+    print(rotate_word("logic"))
+    print(rotate_word("Code"))
+    print(rotate_word("A"))
+    print(rotate_word("eMik"))
 
 # 2. Username Builder Problem
 Create a function named make username() that accepts two strings: first name and last name. The
@@ -28,6 +36,17 @@ function must:
 * **Case Conversion (`.lower()`):** Converts all uppercase characters in both `first_name` and `last_name` to lowercase.
 * **Character Replacement (`.replace(" ", "")`):** Identifies and strips all space characters from multi-word names (such as "Ana Maria" or "De Leon").
 * **String Concatenation (`+`):** Combines the cleaned first name, a literal period (`"."`), and the cleaned last name into a unified username string.
+
+def make_username(first_name, last_name):
+    comprs_first = first_name.lower().replace(" ","") 
+    comprs_last = last_name.lower().replace(" ","")
+    user_builder = comprs_first + "." + comprs_last
+    return user_builder 
+
+    print(make_username("Ada", "Lovelace"))
+    print(make_username("Alan", "Turing"))
+    print(make_username("Ana Maria", "De Leon"))
+    print(make_username("Dhabi", "Gonzaga"))
 
 # 3. Bookend Swap Problem
 Create a function named swap bookends() that accepts a list containing at least two elements. Unpack
@@ -45,3 +64,13 @@ The elements in middle must remain in their original order. Do not modify the in
   * Gathers all center elements into a sub-list named `middle` using the asterisk (`*`) iterable unpacking operator.
   * Captures the final list element into `last`.
 * **List Construction & Unpacking (`[last, *middle, first]`):** Builds a brand new list placing `last` at index 0, expanding the `middle` elements in place, and appending `first` at the end without mutating the original list.
+
+def swap_bookends(items):
+    first, *middle, last = items
+    return [last, *middle, first]
+
+    print(swap_bookends([1, 2, 3, 4, 5, 6]))
+    print(swap_bookends(["red", "green", "blue"]))
+    print(swap_bookends([8, 3])) 
+    print(swap_bookends(["mlbb", "cod", "pubg"]))
+    
